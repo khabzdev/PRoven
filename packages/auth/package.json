@@ -1,0 +1,19 @@
+{
+  "name": "@proven/auth",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./*": "./src/*.ts"
+  },
+  "dependencies": {
+    "@better-auth/drizzle-adapter": "catalog:",
+    "@proven/db": "workspace:*",
+    "better-auth": "catalog:"
+  },
+  "devDependencies": {
+    "@proven/tsconfig": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}
