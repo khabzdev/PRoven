@@ -6,11 +6,8 @@
   "scripts": {
     "ready": "vp fmt && vp lint && vp run test -r && vp run build -r",
     "dev": "vp run web#dev",
+    "db:dev": "vp run db#dev",
     "prepare": "vp config"
-  },
-  "dependencies": {
-    "better-auth": "^1.5.6",
-    "zod": "catalog:"
   },
   "devDependencies": {
     "vite-plus": "catalog:"

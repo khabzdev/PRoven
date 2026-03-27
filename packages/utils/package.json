@@ -1,19 +1,13 @@
 {
-  "name": "@proven/db",
+  "name": "@proven/utils",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/index.ts",
-    "./schema": "./src/schema/index.ts"
-  },
-  "scripts": {
-    "dev": "drizzle-kit studio"
+    "./*": "./src/*.ts"
   },
   "dependencies": {
-    "drizzle-kit": "catalog:",
-    "drizzle-orm": "catalog:",
-    "postgres": "catalog:"
+    "nanoid": "catalog:"
   },
   "devDependencies": {
     "@proven/tsconfig": "workspace:*",

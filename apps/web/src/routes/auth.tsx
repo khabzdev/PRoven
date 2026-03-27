@@ -1,6 +1,7 @@
 import { SignInForm } from "#/components/auth/signin-form";
 import { SignUpForm } from "#/components/auth/signup-form";
 import { Card, CardContent } from "#/components/ui/card";
+import { FieldDescription } from "#/components/ui/field";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "#/components/ui/tabs";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -23,20 +24,24 @@ function RouteComponent() {
             <TabsTrigger value="signup">Sign Up</TabsTrigger>
           </TabsList>
           <TabsContent value="signin">
-            <Card className="shadow-none border-2 border-muted">
+            <Card className="shadow-none border-4 border-muted">
               <CardContent>
                 <SignInForm />
               </CardContent>
             </Card>
           </TabsContent>
           <TabsContent value="signup">
-            <Card className="shadow-none border-2 border-muted">
+            <Card className="shadow-none border-4 border-muted">
               <CardContent>
                 <SignUpForm />
               </CardContent>
             </Card>
           </TabsContent>
         </Tabs>
+        <FieldDescription className="px-6 text-center">
+          By clicking continue, you agree to our <a href="#">Terms of Service</a> and{" "}
+          <a href="#">Privacy Policy</a>.
+        </FieldDescription>
       </div>
     </div>
   );
