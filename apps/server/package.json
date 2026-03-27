@@ -16,7 +16,11 @@
     "@hono/node-server": "catalog:",
     "@hono/trpc-server": "catalog:",
     "@proven/auth": "workspace:*",
+    "@proven/contracts": "workspace:*",
+    "@proven/db": "workspace:*",
+    "@proven/utils": "workspace:*",
     "@trpc/server": "catalog:",
+    "drizzle-orm": "catalog:",
     "hono": "catalog:",
     "superjson": "catalog:",
     "zod": "catalog:"
