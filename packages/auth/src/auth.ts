@@ -6,7 +6,7 @@ import { tanstackStartCookies } from "better-auth/tanstack-start";
 import * as schema from "@proven/db/schema";
 
 export const auth = betterAuth({
-  baseURL: process.env.BASE_URL as string,
+  baseURL: process.env.VITE_BASE_URL as string,
   secret: process.env.BETTER_AUTH_SECRET as string,
   database: drizzleAdapter(db, {
     usePlural: true,
