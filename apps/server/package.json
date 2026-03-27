@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "main": "src/index.ts",
+  "exports": {
+    "./appRouter": "./src/routers/index.ts"
+  },
   "scripts": {
     "dev": "vp dev --port 3001",
     "build": "vp build",
@@ -15,6 +18,7 @@
     "@proven/auth": "workspace:*",
     "@trpc/server": "catalog:",
     "hono": "catalog:",
+    "superjson": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {

@@ -7,7 +7,7 @@ import { createContext } from "./lib/context";
 import { logger } from "hono/logger";
 import "dotenv/config";
 
-export const app = new Hono();
+export const app = new Hono().basePath("/api");
 
 app.use(logger());
 

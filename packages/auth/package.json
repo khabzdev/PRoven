@@ -15,6 +15,7 @@
   "devDependencies": {
     "@proven/tsconfig": "workspace:*",
     "@types/node": "catalog:",
+    "dotenv": "catalog:",
     "typescript": "catalog:"
   }
 }

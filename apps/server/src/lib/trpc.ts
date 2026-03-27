@@ -1,7 +1,16 @@
 import { initTRPC, TRPCError } from "@trpc/server";
 import { Context } from "./context";
+import superjson from "superjson";
 
-export const t = initTRPC.context<Context>().create();
+export const t = initTRPC.context<Context>().create({
+  transformer: superjson,
+  errorFormatter({ shape }) {
+    const {
+      data: { stack: _stack, ...data },
+    } = shape;
+    return { data };
+  },
+});
 
 export const router = t.router;
 
@@ -12,7 +21,6 @@ export const protectedProcedure = t.procedure.use(({ ctx, next }) => {
     throw new TRPCError({
       code: "UNAUTHORIZED",
       message: "Not authenticated",
-      cause: new Error("User is not authenticated"),
     });
   }
 

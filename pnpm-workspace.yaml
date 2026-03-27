@@ -8,7 +8,9 @@ catalog:
   "@hono/node-server": ^1.19.11
   "@hono/trpc-server": ^0.4.2
   "@hookform/resolvers": ^5.2.2
+  "@trpc/client": ^11.15.1
   "@trpc/server": ^11.15.1
+  "@trpc/tanstack-react-query": ^11.15.1
   "@types/node": ^24
   better-auth: ^1.5.6
   dotenv: ^17.3.1
@@ -20,6 +22,7 @@ catalog:
   postgres: ^3.4.8
   react-hook-form: ^7.72.0
   react-hot-toast: ^2.6.0
+  superjson: ^2.2.6
   typescript: ^5
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vite-plus: latest

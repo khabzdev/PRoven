@@ -1,14 +1,7 @@
-import { router, publicProcedure, protectedProcedure } from "../lib/trpc";
+import { t } from "../lib/trpc";
+import { helloRouter } from "./hello";
+import { secretRouter } from "./secret";
 
-export const appRouter = router({
-  hello: publicProcedure.query(() => {
-    return "Hello, world!";
-  }),
-  secret: protectedProcedure.query(({ ctx }) => {
-    return {
-      user: ctx.user,
-    };
-  }),
-});
+export const appRouter = t.mergeRouters(helloRouter, secretRouter);
 
 export type AppRouter = typeof appRouter;
