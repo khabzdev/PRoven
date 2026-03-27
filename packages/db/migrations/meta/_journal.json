@@ -15,6 +15,13 @@
       "when": 1774632885456,
       "tag": "0001_left_lizard",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1774650641509,
+      "tag": "0002_add_is_personal_to_organizations",
+      "breakpoints": true
     }
   ]
 }

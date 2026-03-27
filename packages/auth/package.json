@@ -10,7 +10,8 @@
     "@better-auth/drizzle-adapter": "catalog:",
     "@proven/db": "workspace:*",
     "@proven/utils": "workspace:*",
-    "better-auth": "catalog:"
+    "better-auth": "catalog:",
+    "drizzle-orm": "catalog:"
   },
   "devDependencies": {
     "@proven/tsconfig": "workspace:*",

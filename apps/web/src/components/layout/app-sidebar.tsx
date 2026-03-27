@@ -14,6 +14,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { Terminal } from "@hugeicons/core-free-icons";
 import { Link } from "@tanstack/react-router";
 import { UserNav } from "./user-nav";
+import { MainNav } from "./main-nav";
 
 interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
   user: {
@@ -52,7 +53,9 @@ export const AppSidebar = ({ user, ...props }: AppSidebarProps) => {
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
-      <SidebarContent></SidebarContent>
+      <SidebarContent>
+        <MainNav />
+      </SidebarContent>
       <SidebarFooter>
         <UserNav user={user} />
       </SidebarFooter>
