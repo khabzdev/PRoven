@@ -7,7 +7,7 @@ import * as schema from "@proven/db/schema";
 import { nanoid } from "@proven/utils/custom-nanoid";
 
 export const auth = betterAuth({
-  baseURL: process.env.VITE_BASE_URL as string,
+  baseURL: process.env.BETTER_AUTH_URL as string,
   secret: process.env.BETTER_AUTH_SECRET as string,
   database: drizzleAdapter(db, {
     usePlural: true,

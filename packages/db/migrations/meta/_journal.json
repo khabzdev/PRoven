@@ -8,6 +8,13 @@
       "when": 1774564607073,
       "tag": "0000_flat_wildside",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1774632885456,
+      "tag": "0001_left_lizard",
+      "breakpoints": true
     }
   ]
 }
